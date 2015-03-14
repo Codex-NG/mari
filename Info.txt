@@ -24,3 +24,15 @@ Resources
 #open file              shift + apple + O
 
 
+Environment Set-up
+---------------------------------------
+
+# Install:
+-------------
+1. NodeJs
+2. Grunt CLI
+    npm install grunt-cli -g
+3. Bower
+    npm install bower -g
+4. Java JDK
+    set JAVA_HOME environment variable
