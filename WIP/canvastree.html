@@ -1,0 +1,158 @@
+<html>
+<head>
+    <script type="text/javascript">
+        window.onload = drawimimimim;
+        function draw(){
+            var canvas = document.getElementById('myCanvas');
+            if (canvas.getContext){
+                12
+                var context = canvas.getContext('2d');
+                13
+                drawFractalTree(context);
+                14
+            }
+            15
+        else{
+                16
+                alert("HTML5 Canvas isn't supported by your browser!");
+                17
+            }
+            18
+        }
+        19
+
+        20
+        function drawFractalTree(context){
+            21
+
+            22
+            drawTree(context, 500, 800, -90, 10);
+            23
+        }
+        24
+
+        25
+        function drawTree(context, x1, y1, angle, depth){
+            26
+
+            27
+            var BRANCH_LENGTH = random(0, 15);
+            28
+
+            29
+            if (depth != 0){
+                30
+                var x2 = x1 + (cos(angle) * depth * BRANCH_LENGTH);
+                31
+                var y2 = y1 + (sin(angle) * depth * BRANCH_LENGTH);
+                32
+
+                33
+                drawLine(context, x1, y1, x2, y2, depth);
+                34
+                drawTree(context, x2, y2, angle - random(15,20), depth - 1);
+                35
+                drawTree(context, x2, y2, angle + random(15,20), depth - 1);
+                36
+            }
+            37
+        }
+        38
+
+        39
+        function drawLine(context, x1, y1, x2, y2, thickness){
+            40
+            context.fillStyle   = '#000';
+            41
+            if(thickness > 6)
+                42
+            context.strokeStyle = 'rgb(102, 102, 51)'; //Brown
+            43
+        else
+            44
+            context.strokeStyle = 'rgb(102, 102, 51)'; //Green
+            45
+
+            46
+            context.lineWidth = thickness * 0.5;
+            47
+            context.beginPath();
+            48
+
+            49
+            context.moveTo(x1,y1);
+            50
+            context.lineTo(x2, y2);
+            51
+
+            52
+            context.closePath();
+            53
+            context.stroke();
+            54
+        }
+        55
+
+        56
+
+        57
+        function cos (angle) {
+            58
+            return Math.cos(deg_to_rad(angle));
+            59
+        }
+        60
+
+        61
+        function sin (angle) {
+            62
+            return Math.sin(deg_to_rad(angle));
+            63
+        }
+        64
+
+        65
+        function deg_to_rad(angle){
+            66
+            return angle*(Math.PI/180.0);
+            67
+        }
+        68
+
+        69
+        function random(min, max){
+            70
+            return min + Math.floor(Math.random()*(max+1-min));
+            71
+        }
+        72
+
+        73
+    </script>
+    74
+
+    75
+    <style type="text/css">
+        76
+        canvas { border: 1px solid white; }
+        77
+    </style>
+    78
+
+    79
+</head>
+80
+
+81
+<body>
+82
+<canvas id="myCanvas" width="1500" height="800"></canvas>
+83
+</body>
+84
+
+85
+</html>
+
+UPDATEHIDE CODE
+SAVESHARERESETABOUT

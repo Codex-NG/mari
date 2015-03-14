@@ -1,0 +1,26 @@
+Mari's Web Project
+=============================
+
+Resources
+---------------------------------------
+#Trello:
+
+#Atlassian Source Tree: GIT GUI
+    usr: google+
+
+
+ IntelliJ Keyboard Shortcuts
+---------------------------------------
+#add line               shift + enter
+
+#delete line            apple + backspace
+
+#duplicate line         apple + D
+
+#move line              shift + alt + up/down
+
+#move statement         shift + apple + up/down
+
+#open file              shift + apple + O
+
+
