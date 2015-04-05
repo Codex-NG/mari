@@ -1,6 +1,13 @@
 # Mari Web Project #
 ####################
-.idea
+/app/bower_components/
+/app/css/
+/app/css-prefixed/
+/dist/
+/node_modules/
+/.tmp/
+/.idea/
+*.iml
 
 # Compiled source #
 ###################
