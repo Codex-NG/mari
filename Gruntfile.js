@@ -63,8 +63,6 @@ module.exports = function(grunt) {
             "index.html",
             "img/**",
             "partials/**",
-            "login/index.html",
-            "login/partials/**"
           ],
           filter: "isFile"
         }]
