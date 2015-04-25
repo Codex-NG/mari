@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org"
+      lang="en" id="ng-app" data-ng-app="mari" data-ng-controller="MainCtrl">
+<head>
+
+    <title>Mari Gallegos</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <base href="/index.html" />
+
+  <!--link href='//fonts.googleapis.com/css?family=Open+Sans:400,600&lang=en' rel='stylesheet' type='text/css'-->
+
+  <!--TODO: MAKE SCSS/SASS TAMPLATES AND FIGURE OUT CSS-PREFIXED STUFF -->
+  <!-- build:css /styles/css/mari.css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/angular/angular-csp.css">
+  <link rel="stylesheet" href="styles/css-prefixed/main.css">
+  <link rel="stylesheet" href="styles/css-prefixed/fonts.css">
+  <!--link rel="stylesheet" href="styles/css-prefixed/header.css">
+  <link rel="stylesheet" href="styles/css-prefixed/sidebar.css">
+  <link rel="stylesheet" href="styles/css-prefixed/page.css">
+  <link rel="stylesheet" href="styles/css-prefixed/sprite.css">
+  <link rel="stylesheet" href="styles/css-prefixed/dashboard.css">
+  <link rel="stylesheet" href="styles/css-prefixed/filterform.css"-->
+  <!-- endbuild -->
+
+</head>
+<body class="mg-bg-main">
+
+  <!--[if lt IE 9]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+<div class="">
+  <div class="mg-header">
+    <div class="mg-header-inner-container">
+      <table class="mg-toolbar-table">
+        <tr>
+          <td class="mg-toolbar-td side"><a ng-href="#"><span>About<span></a></td>
+          <td class="mg-toolbar-td center"><span class="mg-special-header-text">Mari Gallegos<span></td>
+          <td class="mg-toolbar-td side"><a ng-href="#/work"><span>Work<span></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="mg-container">
+    <div class="mg-inner-container">
+      <div class="mg-panel" ng-view=""></div>
+      <div class="footer">
+        <p><a href="mailto:mari.gallegos@hp.com">mari.gallegos@hp.com</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+  <!-- build:js /js/mari.js  -->
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/controllers/bowling.js"></script>
+  <script src="js/controllers/main.js"></script>
+  <script src="js/controllers/work.js"></script>
+  <!-- endbuild -->
+
+</body>
+</html>

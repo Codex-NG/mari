@@ -1,8 +1,8 @@
 # Mari Web Project #
 ####################
 /app/bower_components/
-/app/css/
-/app/css-prefixed/
+/app/styles/css/
+/app/styles/css-prefixed/
 /dist/
 /node_modules/
 /.tmp/

@@ -1,0 +1,585 @@
+// bower:scss
+// endbower
+
+
+a, h2, .mg-special-text, .mg-special-header-text
+{
+	font-family: 'Midnight', cursive, Arial, Verdana, sans-serif;
+}
+
+body, ul, li, div, .mg-readable-text
+{
+	font-family: KSMedium, Dekar, Arial, Verdana, sans-serif;
+	font-size:18px;
+	font-weight:normal;
+}
+
+h1
+{
+	font-family: 'Midnight', cursive, Arial, Verdana, sans-serif;
+	font-style: italic;
+}
+
+h3
+{
+	font-family: 'KSBoldIT', Arial, Verdana, sans-serif;
+}
+
+h4
+{
+	font-family: KSMedium, Dekar, Arial, Verdana, sans-serif;
+}
+
+.mg-subheader-it
+{
+	font-family: KSBoldIt;
+}
+
+.mg-special-text
+{
+	font-size:22px;
+}
+
+.mg-special-header-text
+{
+	font-size:42px;
+}
+
+
+/*Generic Styling*/
+/*===========================*/
+a
+{
+	color: white;
+}
+
+a:hover
+{
+	text-decoration:none;
+	color: #6AE7A4;
+}
+
+.pad-right-20
+{
+	padding-right:20px;
+}
+
+.pad-left-20
+{
+	padding-left: 20px;
+}
+
+.bg-texture
+{
+	background-image:url('/images/purty-wood.png');
+	background-color: #FDF3CC;
+}
+
+.display-table-row
+{
+	display: table-row;
+}
+
+.no-list
+{
+	list-style-type:none;
+}
+
+
+/*Container Styling*/
+/*===========================*/
+
+body
+{
+  padding-bottom: 20px;
+}
+
+.browsehappy
+{
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.mg-bg-main
+{
+	background-image: url('/images/woods.jpeg');
+	background-size: 100% 100%;
+	background-repeat: none;
+}
+
+.mg-container
+{
+	-webkit-box-shadow: 3px -11px 70px 10px #220B03;
+    -moz-box-shadow: 3px -11px 70px 10px #220B03;
+    box-shadow: 3px -11px 70px 10px #220B03;
+    border-left:2px solid;
+    border-right:2px solid;
+    border-color: #2A1C14;
+    background-color: transparent;
+    margin:auto;
+}
+
+.mg-inner-container
+{
+    background-color: rgba(42, 28, 20,0.9);
+}
+
+.mg-panel
+{
+	padding-top:20px;
+}
+
+.highlight
+{
+	background-color: rgba(156, 197, 186, 0.611765);
+	border: 2px solid #494A4D;
+}
+
+
+/*Resume Item Styling*/
+/*===========================*/
+
+.mg-resume
+{
+	text-align:left;
+	font-family:Arial;
+	padding:20px 40px 0px 40px;
+}
+
+.mg-resume-item
+{
+	padding: 17px 17px 0px 17px;
+
+	h2
+	{
+		margin-top:0px;
+		margin-bottom:7px;
+	}
+
+	ul
+	{
+		padding:0px 20px;
+	}
+
+	.mg-subheader-txt
+	{
+		padding-left:30px;
+	}
+}
+
+.mg-resume-item.highlight
+{
+	margin-bottom: 20px;
+	padding-bottom:17px;
+
+	h2
+	{
+		margin-top:0px;
+		margin-bottom:20px;
+	}
+}
+
+.mg-resume-item.spotlight
+{
+	min-width:337px;
+	border:7px solid rgba(26, 26, 26, 0.96);
+	background-image:url('/images/me.jpg');
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+	background-position:center right;
+	min-height:235px;
+	color:#F2E4CF;
+	background-color:rgba(26, 26, 26, 0.96);
+	margin-top:20px;
+	padding-right:170px;
+
+	ul
+	{
+		padding-top:20px;
+	}
+
+	p
+	{
+		font-size:18px;
+		text-align:center;
+	}
+
+}
+
+
+/*Lightbox Styling*/
+/*===========================*/
+.mg-lb-img
+{
+	display:inline-block;
+	border-radius:9px;
+	overflow:hidden;
+	border: 3px double rgba(13,0,0,0.75);
+	box-shadow: 0px 0px 6px 0px transparent;
+	opacity: 0.9;
+}
+
+.mg-lb-img:hover
+{
+	border: 3px solid rgba(128, 116, 113, 0.78);
+	box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.64);
+	opacity: 1;
+}
+
+
+/*Welcome Page*/
+/*===========================*/
+.mg-welcome-text
+{
+	font-size:20px;
+	padding:0px 35px;
+}
+
+.mg-banner
+{
+	background-image:url('/images/Web Developer Banner4.png');
+	position:relative;
+	top:80px;
+	left:-10%;
+	height:204px;
+	width:120%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	color:transparent;
+	float:left;
+}
+
+
+/*Work Page*/
+/*===========================*/
+
+.mg-page-work .mg-resume
+{
+	text-align:left;
+	font-family:Arial;
+	padding:20px 0px 0px 0px
+}
+
+.mg-entry-text
+{
+	font-size: 18px;
+	padding: 0px 35px;
+	line-height: 25px;
+	padding-top: 20px;
+	font-family: KSMedium;
+}
+
+
+/*Project Item Styling*/
+/*===========================*/
+
+.mg-project-item
+{
+	padding:5px 17px;
+	margin-bottom:30px;
+	background-color:rgba(152, 173, 123, 0.47);
+	border: 2px solid rgb(82, 82, 82);
+}
+
+.mg-project-item:last
+{
+	margin-bottom:0px;
+}
+
+.mg-project-images
+{
+	width:150px;
+	height:100%;
+}
+
+.mg-project-item.odd
+{
+	.mg-project-images
+	{
+		float:right;
+		text-align:right;
+	}
+	.first
+	{
+		margin-right:20px;
+	}
+}
+
+.mg-project-item.even
+{
+	display:table;
+	width: 100%;
+	background-color: rgba(189, 169, 205, 0.47);
+
+	.mg-project-images
+	{
+		display:table-cell;
+		float:none;
+		text-align:left;
+	}
+
+	.first
+	{
+		margin-left:20px;
+	}
+
+	.second
+	{
+		margin-right:30px;
+	}
+
+	h3
+	{
+		text-align:center;
+	}
+}
+
+.mg-project-item-body
+{
+	padding:0px 20px;
+	display:table-cell;
+}
+
+
+/*Footer*/
+/*===========================*/
+.marketing,
+.footer
+{
+	color:white;
+}
+
+.footer a
+{
+	color: #F0EAC6;
+}
+
+.footer a:hover,
+.footer a:active
+{
+	text-decoration:none;
+	color: #6AE7A4;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.mg-header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*Header*/
+/*===========================*/
+
+.mg-header
+{
+  	background-color: rgba(90, 1, 1, 0.72);
+  	position:fixed;
+  	width: 100%;
+  	z-index:7;
+  	margin-bottom:0px;
+
+  	/* Make the masthead heading the same height as the navigation */
+
+  	.header-text-container
+  	{
+  		margin:auto;
+  		text-align:center;
+  	}
+
+  	.header-text-container:hover .header-text
+  	{
+  		color: #6AE7A4 !important;
+  	}
+
+  	.header-text
+  	{
+    	padding-top: 0px;
+  		margin-top: 0;
+  		margin-bottom: 0;
+  		font-size: 40px;
+  		color: white;
+  		font-family: 'Midnight', 'cursive';
+  		font-weight: normal;
+  		font-style: normal;
+  		padding-left:0px;
+		display:inline;
+		text-align: left;
+  	}
+
+  	.header-text-1
+  	{
+  		padding-left:4px;;
+  		padding-right:12px;
+  	}
+
+}
+
+.mg-toolbar-table
+{
+	width:100%;
+	height:90px;
+	color:white;
+	text-align:center;
+	vertical-align:center;
+	font-size:18px;
+}
+
+.mg-toolbar-td
+{
+	padding-top:11px;
+}
+
+.mg-toolbar-td:hover
+{
+	color: #FFB334;
+	a
+	{
+		text-decoration:none;
+		color: #FFB334;
+	}
+}
+
+.mg-toolbar-td.center
+{
+	font-size: 40px;
+}
+
+.mg-toolbar-td.side
+{
+	width:30%;
+}
+
+.mg-toolbar-ul
+{
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+
+	li
+	{
+		position: relative;
+		display: inline-block;
+
+
+		a
+		{
+			position: relative;
+			display: block;
+			padding: 0px;
+			font-size: 15px;
+		}
+
+		a:hover,
+    	a:focus
+    	{
+        	text-decoration: none;
+        	background-color: transparent;
+        	color: #6AE7A4 !important;
+    	}
+
+	}
+
+	li:hover,
+	li:focus
+    {
+    	text-decoration: none;
+        background-color: transparent;
+        cursor: not-allowed;
+    }
+}
+
+.mg-toolbar-li
+{
+	width:32.5%;
+	text-align:center;
+	height:100%;
+	line-height:60px;
+}
+
+.mg-toolbar-nav
+{
+	font-size:22px;
+}
+
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  padding-top: 100px;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+.jumbotron.first
+{
+	padding-top:315px;
+	margin-bottom:0px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+
+/*--------------------------------------------------------------*/
+/* Responsive: Portrait tablets and up */
+/*--------------------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+
+/*Container Styling*/
+/*===========================*/
+
+  .mg-bg-main
+  {
+	min-width:1150px;
+	min-height:700px;
+  }
+
+  .mg-container
+  {
+    max-width: 950px;
+  }
+
+  .mg-inner-container
+  {
+  	padding-left:30px;
+  	padding-right:30px;
+  }
+
+  .mg-header-inner-container
+  {
+ 	max-width: 950px;
+    border-left: 2px solid #3C0000;
+    border-right: 2px solid #3C0000;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-shadow: 3px -24px 70px 10px #3A0000;
+    -webkit-box-shadow: 3px -24px 70px 10px #3A0000;
+    -moz-box-shadow: 3px -11px 70px 10px #3A0000;
+    background-color:rgba(71, 0, 0, 1)
+  }
+}

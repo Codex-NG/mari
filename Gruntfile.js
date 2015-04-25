@@ -7,8 +7,8 @@ module.exports = function(grunt) {
 
     "clean": {
       all: [
-        "app/css",
-        "app/css-prefixed",
+        "app/styles/css",
+        "app/styles/css-prefixed",
         "dist",
         ".tmp"
       ]
@@ -19,13 +19,13 @@ module.exports = function(grunt) {
         options: {
           style: "expanded",
           compass: false,
-          loadPath: ["app/scss", "app/bower_components/bootstrap-sass/stylesheets/bootstrap"]
+          loadPath: ["app/styles/scss", "app/bower_components/bootstrap-sass/assets/stylesheets"]
         },
         files: [{
             expand: true,
-            cwd: "app/scss",
+            cwd: "app/styles/scss",
             src: ["**/*.scss"],
-            dest: "app/css",
+            dest: "app/styles/css",
             ext: ".css"
         }]
       }
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
 
     "watch": {
       sass: {
-        files: "app/scss/*.scss",
+        files: "app/styles/scss/*.scss",
         tasks: ['sass:dev']
       }
     },
@@ -45,9 +45,9 @@ module.exports = function(grunt) {
       all: {
         files: [{
           expand: true,
-          cwd: "app/css",
+          cwd: "app/styles/css",
           src: ["**/*.css"],
-          dest: "app/css-prefixed",
+          dest: "app/styles/css-prefixed",
           ext: ".css"
         }]
       }
@@ -78,7 +78,7 @@ module.exports = function(grunt) {
     },
 
     "usemin": {
-      css: ['dist/css/*.css'],
+      css: ['dist/styles/css/*.css'],
       html: ['dist/index.html'],
       options: {
         assetsDirs: ['dist/']
@@ -127,7 +127,7 @@ module.exports = function(grunt) {
 
     filerev: {
       css: {
-        src: 'dist/css/*'
+        src: 'dist/styles/css/*'
       },
       javascript: {
         src: ['dist/js/*']

@@ -1,0 +1,12 @@
+<p>This is the favorites view.</p>
+
+<ul>
+	<li ng-repeat="character in characters">{{character.name}}
+		<input ng-model="character.name">
+		<button ng-click="save(character)">Save</button>
+	</li>
+</ul>
+
+
+
+

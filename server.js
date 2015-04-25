@@ -10,7 +10,7 @@ var sql = require("squel");
 // private modules
 //var ws = require('./private_modules/ws-database.js');
 var utils = require('./private_modules/utilities.js');
-var interceptor = require('./private_modules/interceptor.js');
+//var interceptor = require('./private_modules/interceptor.js');
 var config = require('./private_modules/config.js');
 
 // Create a new express instance:
@@ -27,7 +27,7 @@ var port = process.env.PORT || config.defaultPort;
 //app.use(bodyParser.json());
 
 // Intercept base url
-app.use(interceptor.intercept);
+//app.use(interceptor.intercept);
 
 //How does the express router work?
 app.use('', router); // Adding Express router
