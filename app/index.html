@@ -11,7 +11,11 @@
 
   <!--link href='//fonts.googleapis.com/css?family=Open+Sans:400,600&lang=en' rel='stylesheet' type='text/css'-->
 
-  <!--TODO: MAKE SCSS/SASS TAMPLATES AND FIGURE OUT CSS-PREFIXED STUFF -->
+  <!--Favicon Links-->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!--TODO: MAKE SCSS/SASS TEMPLATES AND FIGURE OUT CSS-PREFIXED STUFF -->
   <!-- build:css /styles/css/mari.css -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="bower_components/angular/angular-csp.css">
@@ -26,27 +30,57 @@
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-<div class="">
+<div class="mg-welcome-panel">
+  <div class="mg-special-header-text">
+    <div class="mg-special-header-text-1">Mari</div>
+  </div>
+  <div class="mg-special-header-text">
+    <div class="mg-special-header-text-2">Mari</div>
+  </div>
+  <div class="mg-special-header-text">
+    <div class="mg-special-header-text-3">Mari</div>
+  </div>
+
+  <div class="mg-welcome-summary">A Chicago-based Web Developer&nbsp;</div>
+
+  <div class="mg-welcome-button">
+    <div>Enter</div>
+  </div>
+</div>
+<!--<div class="">
   <div class="mg-header">
     <div class="mg-header-inner-container">
       <table class="mg-toolbar-table">
         <tr>
           <td class="mg-toolbar-td side"><a ng-href="#"><span>About<span></a></td>
-          <td class="mg-toolbar-td center"><span class="mg-special-header-text">Mari Gallegos<span></td>
+          <td class="mg-toolbar-td center">
+            <div class="mg-special-header-text">
+              <div class="mg-special-header-text-1">Mari Gallegos</div>
+            </div>
+            <div class="mg-special-header-text">
+              <div class="mg-special-header-text-2">Mari Gallegos</div>
+            </div>
+            <div class="mg-special-header-text">
+              <div class="mg-special-header-text-3">Mari Gallegos</div>
+            </div>
+          </td>
           <td class="mg-toolbar-td side"><a ng-href="#/work"><span>Work<span></a></td>
         </tr>
       </table>
     </div>
   </div>
-  <div class="mg-container">
+
+
+
+  <div class="mg-container" ng-view="">
     <div class="mg-inner-container">
-      <div class="mg-panel" ng-view=""></div>
+      <div class="mg-panel"></div>
       <div class="footer">
         <p><a href="mailto:mari.gallegos@hp.com">mari.gallegos@hp.com</a></p>
       </div>
     </div>
   </div>
-</div>
+</div>-->
 
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
