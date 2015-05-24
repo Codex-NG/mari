@@ -11,10 +11,17 @@ function routes ($routeProvider, $locationProvider) {
   // Using Html 5 History API instead of the HashBang mode
   $locationProvider.html5Mode(true);
 
-  // Home route
-  $routeProvider.when("/main", {
+  // Welcome route
+  $routeProvider.when("/", {
+    controller: "MainCtrl",
+    templateUrl: "views/welcome.html"
+  });
+
+  // About route
+  $routeProvider.when("/about", {
     controller: "MainCtrl",
     templateUrl: "views/main.html"
+
   });
 
   // Workspace route

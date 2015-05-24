@@ -23,6 +23,8 @@ var router = express.Router();	// router for the api
 // Perhaps config.defaultPort comes from the same place.
 var port = process.env.PORT || config.defaultPort;
 
+app.use('', router); // Adding Express router
+
 //app.use(cookieParser());
 //app.use(bodyParser.json());
 
@@ -30,11 +32,29 @@ var port = process.env.PORT || config.defaultPort;
 //app.use(interceptor.intercept);
 
 //How does the express router work?
-app.use('', router); // Adding Express router
-
 //Serve static file if no matching routes
-app.use(express.static(__dirname + utils.getAppRoot()));	// Serve static file if no matching routes
 
+//Funnel all routes through index.html
+//app.use('/*', function(req,res){
+//  res.sendFile(__dirname + '/app/index.html');
+//});
+//app.use('/*', express.static(__dirname + '/app'));	// Serve static file if no matching routes
+
+
+// serve all asset files from necessary directories
+app.use("/js", express.static(__dirname + "/app/js"));
+app.use("/images", express.static(__dirname + "/app/images"));
+app.use("/styles", express.static(__dirname + "/app/styles"));
+app.use("/views", express.static(__dirname + "/app/views"));
+app.use("/bower_components", express.static(__dirname + "/app/bower_components"));
+app.use("/fonts", express.static(__dirname + "/app/fonts"));
+
+// serve index.html for all remaining routes, in order to leave routing up to angular
+app.all("/*", function(req, res, next) {
+  res.sendFile("index.html", { root: __dirname + "/app" });
+});
+
+app.use(express.static(__dirname + '/app'));	// Serve static file if no matching routes
 app.listen(port);
 console.log('Server running on port ' + port);
 

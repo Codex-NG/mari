@@ -176,6 +176,7 @@ module.exports = function(grunt) {
     'usemin'
   ]);
   grunt.registerTask('default', ['sass', 'autoprefixer', 'jshint', 'nodemon:dev']);
+  grunt.registerTask('css', ['sass','autoprefixer']);
   grunt.registerTask('run', ['nodemon:dev']);
   grunt.registerTask('run-prod', ['nodemon:prod']);
   grunt.registerTask('lint', ['jshint']);
