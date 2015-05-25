@@ -217,15 +217,10 @@ a:hover{
 	}
 }
 
-.mg-design-1{
-  padding-left:30%;
-  padding-right:30%;
-  text-align:center;
+.mg-resume-item-table{
   display:table;
-  background-image: url("/images/svgs/forest1.svg");
-  background-repeat:no-repeat;
-  background-position: center center;
-  background-size:cover;
+  padding: 0px;
+  text-align:center;
 
   .left,
   .middle,
@@ -274,6 +269,26 @@ a:hover{
 }
 
 
+.mg-ri-design-1
+{
+  .left{
+    float:left;
+  }
+  .right
+  {
+    height:430px;
+    padding:3px 50px 35px 300px;
+    .mg-div-text
+    {
+      height:100%;
+      box-shadow: 0px 0px 10px 1px #5e5e5e;
+      background-color: rgba(161, 170, 126, 0.69);
+      padding:25px 50px;
+
+    }
+  }
+}
+
 /*Lightbox Styling*/
 /*===========================*/
 .mg-lb-img{
@@ -297,7 +312,7 @@ a:hover{
 .mg-welcome-text,
 .jumbotron .mg-welcome-text{
 	font-size:17px;
-	padding:0px 35px;
+  padding: 0px;
 }
 
 .jumbotron p{
@@ -673,10 +688,28 @@ a:hover{
   background-repeat:no-repeat;
 }
 
-.mg-img-chi{
-  background-image:url('/images/chi.png');
+.mg-img-illinois{
+  background-image:url('/images/svgs/illinois.svg');
+  background-repeat:no-repeat;
+  background-size: auto 200px;
+  background-color:#4F9196;
+  background-position: 48% 53%;
+  height:238px;
+  width:250px;
+  border-radius:125px;
+  margin:auto;
+
+
 }
 
 .mg-img-hplogo{
   background-image:url('/images/hp.png')
+}
+
+.mg-img-girl{
+  height:400px;
+  width:400px;
+  background-image: url('/images/svgs/girl.svg');
+  background-size: auto 400px;
+  background-repeat: no-repeat;
 }
