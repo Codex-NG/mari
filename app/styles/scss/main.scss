@@ -289,6 +289,59 @@ a:hover{
   }
 }
 
+.mg-ri-design-2
+{
+  margin: 0px 60px 20px 60px;
+  padding: 60px 0px;
+  background-color:rgba(246,246,246,0.75);
+  box-shadow: 0px 0px 10px 1px #5e5e5e;
+  .top{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+  }
+  .left,.right{
+    display:inline-block;
+    width:49%;
+  }
+  .left{
+    padding-left:125px;
+  }
+  .right{
+    padding-right:125px;
+  }
+  .bottom{
+    padding: 30px 110px 15px 110px;
+    text-align: center;
+  }
+  .mg-div-text{
+    text-align:center;
+    font-size:23px;
+  }
+}
+
+.mg-ri-design-3
+{
+  background-color:#4F9196;
+  height:550px;
+}
+
+.mg-txt-college{
+  font-family: HomesteadRegular, KSMedium, Verdana, serif;
+  font-size:30px !important;
+  font-weight:bold;
+}
+
+.mg-img-usc ~ .mg-txt-college
+{
+  color:#AE262A;
+}
+
+.mg-img-cmu ~ .mg-txt-college
+{
+  color: #1B7C7B;
+}
+
 /*Lightbox Styling*/
 /*===========================*/
 .mg-lb-img{
@@ -698,8 +751,6 @@ a:hover{
   width:250px;
   border-radius:125px;
   margin:auto;
-
-
 }
 
 .mg-img-hplogo{
@@ -713,3 +764,24 @@ a:hover{
   background-size: auto 400px;
   background-repeat: no-repeat;
 }
+
+.mg-img-usc{
+  background-image:url('/images/svgs/usc.svg');
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position:center center;
+  margin: 35px auto 15px auto;
+  height:125px;
+  width:250px;
+}
+
+.mg-img-cmu{
+  background-image:url('/images/svgs/cmu.svg');
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position:center center;
+  margin: 35px auto 15px auto;
+  height:125px;
+  width:250px;
+}
+
