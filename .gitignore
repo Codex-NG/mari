@@ -7,6 +7,7 @@
 /node_modules/
 /.tmp/
 /.idea/
+/.sass-cache/
 *.iml
 *.scssc
 
@@ -46,4 +47,5 @@
 .Spotlight-V100
 .Trashes
 ehthumbs.db
+
 
