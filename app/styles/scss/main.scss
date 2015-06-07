@@ -186,7 +186,7 @@ a:hover{
 
 .highlight{
 	background-color: rgba(156, 197, 186, 0.611765);
-	box-shadow: 0px 0px 10px 1px #5e5e5e;
+	/*box-shadow: 0px 0px 10px 1px #5e5e5e;*/
 }
 
 
@@ -201,7 +201,7 @@ a:hover{
 }
 
 .mg-resume-item{
-	padding: 17px 17px 0px 17px;
+	padding: 0px
 
 	h2{
 		margin-top:0px;
@@ -222,16 +222,16 @@ a:hover{
   padding: 0px;
   text-align:center;
 
+  .mg-table-row{
+    display:table-row;
+  }
+
   .left,
   .middle,
   .right{
     display:table-cell
   }
 
-  .middle{
-    padding: 15px 0px;
-    vertical-align:middle;
-  }
 }
 
 .mg-resume-item.highlight{
@@ -272,32 +272,29 @@ a:hover{
 .mg-ri-design-1
 {
   margin-bottom:50px;
+  padding: 50px 0px;
+  background-color: rgba(161, 170, 126, 0.69);
+  /*box-shadow: 0px 0px 10px 1px #5e5e5e;*/
+  width:100%;
 
   .left{
-    float:left;
+    width:300px;
+    height:400px;
   }
-  .right
-  {
-    height:430px;
-    padding:3px 50px 35px 300px;
-    .mg-div-text
-    {
-      height:100%;
-      box-shadow: 0px 0px 10px 1px #5e5e5e;
-      background-color: rgba(161, 170, 126, 0.69);
-      padding:25px 50px;
-
-    }
+  .right{
+    padding: 0px 200px 0px 100px;
+    vertical-align:middle;
   }
 
 }
 
 .mg-ri-design-2
 {
-  margin: 0px 60px 60px 60px;
+  margin: 200px 0px 60px 0px;
   padding: 60px 0px;
-  background-color:rgba(246,246,246,0.75);
-  box-shadow: 0px 0px 10px 1px #5e5e5e;
+  text-align: center;
+  background-color: rgba(161, 170, 126, 0.69);
+  /*box-shadow: 0px 0px 10px 1px #5e5e5e;*/
   .top{
     text-align:center;
     font-size:30px;
@@ -307,11 +304,26 @@ a:hover{
     display:inline-block;
     width:49%;
   }
+  .mg-div-cntr{
+    display:inline-block;
+    border-radius:160px;
+    background-color:#F7F6F5;
+    width:320px;
+    height:320px;
+    padding-top:27px;
+  }
+
+  .mg-div-img{
+    margin: 22px auto 24px auto;
+  }
+
   .left{
-    padding-left:125px;
+    padding-right:20px;
+    text-align:right;
   }
   .right{
-    padding-right:125px;
+    padding-left:20px;
+    text-align:left;
   }
   .bottom{
     padding: 50px 110px 15px 110px;
@@ -334,7 +346,7 @@ a:hover{
   background-color:rgba(0,128,128,0.9);
   color:#EAEAEA;
   padding:60px 100px;
-  box-shadow: 0px 0px 10px 1px #5e5e5e;
+  /*box-shadow: 0px 0px 10px 1px #5e5e5e;*/
 }
 
 .mg-ri-design-5
@@ -380,6 +392,25 @@ a:hover{
   .middle
   {
     margin:0px 15px;
+  }
+}
+
+.mg-ri-design-hp{
+  text-align: center;
+  height:550px;
+  margin-top:200px;
+
+  .mg-div-img{
+    display:inline-block;
+    background-repeat:no-repeat;
+    width:400px;
+  }
+  .mg-div-txt{
+    /*box-shadow: 0px 0px 10px 1px gray;*/
+    background-color: rgba(181, 183, 179, 0.69);
+    margin:50px 0px 0px 0px;
+    padding:60px 100px;
+    text-align:left;
   }
 }
 
@@ -807,19 +838,32 @@ a:hover{
   height:238px;
   width:250px;
   border-radius:125px;
-  margin:auto;
+  margin:40px auto auto auto;
 }
 
-.mg-img-hplogo{
+.mg-img-hp{
   background-image:url('/images/hp.png');
+  background-size: auto 165px;
+  background-position: center center;
+  height:165px;
+}
+
+.mg-img-hpe{
+  background-image:url('/images/hpe.png');
+  background-size: auto 163px;
+  background-position: center left;
+  height:163px;
 }
 
 .mg-img-girl{
   height:400px;
-  width:400px;
+  width:100px;
   background-image: url('/images/svgs/girl.svg');
   background-size: auto 400px;
   background-repeat: no-repeat;
+  background-position: center right;
+  position:absolute;
+  padding-left:300px;
 }
 
 .mg-img-usc{
@@ -827,7 +871,6 @@ a:hover{
   background-size:100%;
   background-repeat:no-repeat;
   background-position:center center;
-  margin: 35px auto 15px auto;
   height:125px;
   width:250px;
 }
@@ -837,7 +880,6 @@ a:hover{
   background-size:100%;
   background-repeat:no-repeat;
   background-position:center center;
-  margin: 35px auto 15px auto;
   height:125px;
   width:250px;
 }
